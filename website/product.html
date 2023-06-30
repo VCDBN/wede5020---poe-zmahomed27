@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <link rel="stylesheet" type="text/css" href="product.css">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
+
+   
+    
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+</div>
+
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="product.html">Product</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contactus.html">Contact Us</a>
+</div>
+
+<div class="header">
+        
+    <img src="images/Bright Colorful Playful Funny Donuts Food Circle Logo.jpg" alt="logo" width="200" height="200">
+    
+</div>
+
+
+
+
+
+<div class="column middle">
+    <h2>Products</h2>
+    
+    <img src="images/strips mammas.JPG" alt="food" width="200" height="300"
+<br>
+    <img src="images/wrap food.JPG" alt="food" width="200" height="300"
+<br>
+    <img src="images/tikka burger.JPG" alt="food" width="200" height="300"
+<br>
+    <img src="images/fillet burger.JPG" alt="food" width="200" height="300"
+<br>
+    <img src="images/pita chicken.JPG" alt="food" width="200" height="300"
+<br>
+    <img src="images/nuggets.JPG" alt="food" width="200" height="300"
+<br>
+    <img src="images/family pack.JPG" alt="food" width="200" height="300"   
+
+</div>
+
+
+
+<div class="footer">
+    <p>Mammas chicken</p>
+    <p>copyright 2023</p>
+    <p>Mammaschicken.co.za</p>
+    <a class="social-icon" href="https://www.instagram.com/mammas_food_truck01/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <a class="social-icon" href="https://api.whatsapp.com/send/?phone=0836011863&text&type=phone_number&app_absent=0"><ion-icon name="logo-whatsapp"></ion-icon></a>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" type="text/css" href="contactus.css">
+    
+
+        
+
+</head>
+<body>
+ 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
+
+   
+    
+  <script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+    
+
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="product.html">Product</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contactus.html">Contact Us</a>
+</div>  
+
+<div class="header">
+        
+    <img src="images/Bright Colorful Playful Funny Donuts Food Circle Logo.jpg" alt="logo" width="200" height="200">
+    
+</div>
+
+
+
+<div class="column middle">
+<table>
+    <caption>Contact information</caption>
+<tr>
+        
+    <th>Riaz Nakooda</th>
+    <th>Head Office</th>
+    <th>Naeema</th>
+</tr>
+<tr>
+    <td>0732378656</td>
+    <td>0333657784</td>
+    <td>0780201255</td>
+</tr>
+    <td>riaz@mammaschicken.co.za</td>
+    <td>Headoffice@mammaschicken.co.za</td>
+    <td>Naeema@mammaschicken.co.za</td>
+        
+        
+        
+        
+        
+</table>
+   
+<script>
+  function clearInitialValue(element) {
+    if (element.value === element.defaultValue) {
+      element.value = '';
+    }
+  }
+
+  function validateForm() {
+    var name = document.forms["myForm"]["name"].value;
+    var email = document.forms["myForm"]["email"].value;
+
+    if (name === "" || email === "") {
+      alert("Name and email are required fields.");
+      return false;
+    }
+
+    // the mailto: link sends the result to an email
+    var mailtoLink = "mailto:someone@example.com";
+    mailtoLink += "?subject=Form Submission";
+    mailtoLink += "&body=Name: " + encodeURIComponent(name);
+    mailtoLink += "%0AEmail: " + encodeURIComponent(email);
+
+    // Open the default email client with the mailto: link
+    window.location.href = mailtoLink;
+
+    return true;
+  }
+</script>
+</head>
+<body>
+
+<form name="myForm" onsubmit="return validateForm()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" value="Enter your name" onclick="clearInitialValue(this)"><br><br>
+
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" value="Enter your email" onclick="clearInitialValue(this)"><br><br>
+
+  <label for="what is your favourite product?">What is your favourite product?</label>
+  <input type="text" id="what is your favourite product?" name="what is your favourite product?" value="What is your favourite product?" onclick="clearInitialValue(this)"><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+</body>
+
+
+
+</div>
+<div class="footer">
+    <p>Mammas chicken</p>
+    <p>copyright 2023</p>
+    <p>Mammaschicken.co.za</p>
+
+    <a class="social-icon" href="https://www.instagram.com/mammas_food_truck01/?hl=en"><ion-icon name="logo-instagram"></ion-icon></a>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <a class="social-icon" href="https://api.whatsapp.com/send/?phone=0836011863&text&type=phone_number&app_absent=0"><ion-icon name="logo-whatsapp"></ion-icon></a>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </a>
+    
+
+</div>
+
+
+
+</body>
+</html>
